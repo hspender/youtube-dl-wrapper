@@ -160,8 +160,6 @@ fi
 
 ## End aquiring info' about the desired video to download...
 
-#clear
-
 echo "
         ################################################
         #                                              #
