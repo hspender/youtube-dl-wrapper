@@ -149,7 +149,7 @@ if [ $options = y ];
     then youtube-dl -F $URL && echo "
             Which of the options above would you
             like to choose? (See number at start of
-            each line)." && read option && youtube-dl -f $option $URL
+            each line)." && read option && clear && youtube-dl -f $option $URL
         else echo "
        #####################################################
        #                                                   #
