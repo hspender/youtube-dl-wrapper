@@ -1,6 +1,6 @@
 ::About::<br />
 
-youtube-dl wrapper is a script that makes using youtube-dl a little easier, but is basically just an exsercise in learing Git, GitKraken and Bash for me.<br />
+Youtube-dl wrapper is a script that makes using youtube-dl a little easier, but is basically just an exsercise in learing Git, GitKraken and Bash for me.<br />
 I hope to update and improve this code as well as maybe adding a Zenity front end over time.
 
 ::Installation::<br />
