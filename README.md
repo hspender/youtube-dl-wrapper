@@ -15,5 +15,5 @@ If you get the error "/usr/bin/env: 'python': No such file or directory" then op
 ```bash{16}
 sudo ln -s /usr/bin/python3 /usr/bin/python
 ```
-Source; https://vuepressbook.com/tutorial/tutorial6.html#code-listings-in-markdown-files
+Source; https://newbedev.com/usr-bin-env-python-no-such-file-or-directory
 
