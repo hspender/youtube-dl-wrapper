@@ -19,6 +19,6 @@ cp LICENSE ~/bin/YT-DL
 cp README.md ~/bin/YT-DL
 
 # tell the user we're finished installing...
-echo "youtube-dl wrapper is installed!
+echo "youtube-dl wrapper is now installed!
 Press 'Enter' to close this window..."
 read
