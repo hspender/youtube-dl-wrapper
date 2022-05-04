@@ -5,7 +5,7 @@
 #  Script for downloading YouTube videos  #
 #  It also checks that ytdl is installed  # 
 #  and up to date!                        #
-#  By Peter Green                         #
+#  By Harry Spender                       #
 #  Version 0.8.1                          #
 #  Date of first version; 2022-04-04      #
 #  Date of last update; 2022-04-20        #
@@ -24,7 +24,7 @@ echo "
       
         #############################################################
         #                                                           #
-        #      Welcome to the GP YouTube video downloader!          #
+        #      Welcome to the Harry's YouTube video downloader!     #
         #                     Version 0.8.1                         #
         #                                                           #
         #############################################################"
