@@ -20,5 +20,11 @@ cp README.md ~/bin/YT-DL
 
 # tell the user we're finished installing...
 echo "youtube-dl wrapper is now installed!
+
+::NOTE::
+If when you run this program and you get the error -
+ "/usr/bin/env: 'python': No such file or directory"
+ then run the included script; python-error.sh
+
 Press 'Enter' to close this window..."
 read
