@@ -1,5 +1,5 @@
 youtube-dl wrapper is a script that makes using youtube-dl a little easier, but is basically just an exsercise in learing Git and Bash for me.<br />
-I hope to upadate and improve its code as well as maybe add a Zenity front end one day.
+I hope to upadate and improve its code as well as maybe adding a Zenity front end one day.
 
 ::Installation::<br />
 
