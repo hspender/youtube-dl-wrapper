@@ -12,5 +12,8 @@ Note that my script does keep youtube-dl up to date by periodically checking the
 ::NOTE:: You can have issues if youtube-dl can't find python in the place it thinks it should be and to resove this, you need to creat a symlink.<br />
 
 If you get the error "/usr/bin/env: 'python': No such file or directory" then open a terminal and execute this code...<br />
-```bash
+```bash{16}
 sudo ln -s /usr/bin/python3 /usr/bin/python
+```
+Source; https://vuepressbook.com/tutorial/tutorial6.html#code-listings-in-markdown-files
+
