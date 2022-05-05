@@ -6,7 +6,7 @@ if [ -f /usr/bin/python ];
 The link is already there.
 Running this script will not do anything.
 Aborting...
-Press 'Enter' to close this window" && read && exit
+Press 'Enter' to close this window" && read -r && exit
     else pyerror=n
 fi
 
