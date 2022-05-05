@@ -27,8 +27,8 @@ If you get the error message '/usr/bin/env: 'python': No such file or directory'
 the you should run the included python-error.sh script to fix it."
 fi
 
-# tell the user we're finished installing...
+# Tell the user we're finished installing...
 echo "youtube-dl-wrapper is now installed!
 
 Press 'Enter' to close this window..."
-read
+read -r
