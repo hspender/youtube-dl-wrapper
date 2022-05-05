@@ -18,13 +18,17 @@ cp YT-DL.sh ~/bin/YT-DL
 cp LICENSE ~/bin/YT-DL
 cp README.md ~/bin/YT-DL
 
-# tell the user we're finished installing...
-echo "youtube-dl wrapper is now installed!
+# Check for the python symlink...
 
-::NOTE::
-If when you run this program and you get the error -
- "/usr/bin/env: 'python': No such file or directory"
- then run the included script; python-error.sh
+if [ -f /usr/bin/python ];
+    then echo >/dev/null
+        else echo "There may be problems running youtube-dl itself.
+If you get the error message '/usr/bin/env: 'python': No such file or directory'
+the you should run the included python-error.sh script to fix it."
+fi
+
+# tell the user we're finished installing...
+echo "youtube-dl-wrapper is now installed!
 
 Press 'Enter' to close this window..."
 read
