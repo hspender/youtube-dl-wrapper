@@ -7,7 +7,7 @@ I hope to update and improve this code as well as maybe adding a Zenity front en
 
 To install, just run the installation script in the main directory. This will check to see if you have youtube-dl installed and install it if you don't.<br />
 It installs to /home/user/bin/YT-DL and does not as yet create a menu entry, so you need to do that manually for the time being.<br />
-I have chosen to download youtube-dl directly from their release page, but you can install it from your distro's repo' before installing this script if you'd rather.<br />
+I have chosen to download youtube-dl directly from their release page, in order to get  the latest version, but you can install it from your distro's repo' before installing this script if you'd rather.<br />
 Note that my script does keep youtube-dl up to date by periodically checking the main repo for updates and applying them if needed.
 
 ::NOTE:: You can have issues if youtube-dl can't find python in the place it thinks it should be and to resolve this, you need to create a symlink.<br />
