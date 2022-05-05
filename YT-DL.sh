@@ -12,14 +12,14 @@
 #                                         #
 ###########################################
 
-## Config...
+# Config...
 
 # How many times should this script run before it checks for updates?
 ud_frq=11 # This means the script will run on the number after that which you set here. The counter starts at 0.
 
-## End config.
+# End config.
 
-## Say hi, and declare version number...
+# Say hi, and declare version number...
 echo " 
       
         #############################################################
@@ -29,9 +29,6 @@ echo "
         #                                                           #
         #############################################################"
 
-##########################################################################################
-##########################################################################################
-
 #  Environmet check...
 
 # Check for youtube-dl. If not found, prompt for install...
@@ -40,13 +37,11 @@ echo "
 if [ -f /usr/local/bin/youtube-dl ]
     then echo "            Youtube-dl found, nothing to install!"
         else echo " Youtube-dl not found and is needed.
-Would you like to install it? (y/n)" && read install
+Would you like to install it? (y/n)" && read -r install
 until [ $install = y ] || [ $install = n ];
-    do echo "  That is an invalid input, please use 'y' or 'n'." && read install
+    do echo "  That is an invalid input, please use 'y' or 'n'." && read -r install
     done
 fi
-
-#clear
 
 if [ "$install" = y ];
     then sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && sudo chmod a+rx /usr/local/bin/youtube-dl
@@ -59,19 +54,16 @@ elif [ "$install" = n ];
         #                                                  #
         #  Press 'Enter' to close this window...           #
         #                                                  #
-        ####################################################" && read && exit 1
+        ####################################################" && read -r && exit 1
 
 fi
 
 #  End environment check.
 
-##########################################################################################
-##########################################################################################
-
-## Start database incrementation...
-
 # Move to working dir...
 cd ~/Desktop || exit
+
+# Start database incrementation...
 
 # Read the database and put it in a variable...
 ud_count=$(cat ~/bin/YT-DL/db.txt)
@@ -87,23 +79,18 @@ let "ud_count=ud_count+1"
 # Write the new value to the database...
 echo "$ud_count" > ~/bin/YT-DL/db.txt
 
+# End database incrementation...
 
-
-## End database incrementation...
-
-## Start processing the update counter db...
+# Start processing the update counter db...
 
 if [ $ud_count -gt $ud_frq ];
     then echo "            We need to update!" && echo "            Checking for updates..." && youtube-dl -U && echo "0" > ~/bin/YT-DL/db.txt
         else echo "            No need to update yet..."
 fi
 
-## End processing the update counter db...
+# End processing the update counter db...
 
-##########################################################################################
-##########################################################################################
-
-## Start aquiring info' about the desired video to download...
+# Start aquiring info' about the desired video to download...
 
 # Ask the user what the URL of the video is...
 
@@ -115,12 +102,12 @@ echo "
         #                                                             #
         ###############################################################"
 
-read URL #Example - https://youtu.be/S8UNBfatLTo
+read -r URL #Example - https://youtu.be/S8UNBfatLTo
 
-# Validate user input of the URL variable, (not working yet)...
+# Validate user input of the URL variable...
 until [[ $URL = *youtu* ]];
     do echo "            That is not a recognised URL.
-            Please try again..." && read URL
+            Please try again..." && read -r URL
 done
 
 clear
@@ -135,12 +122,12 @@ echo "
        #############################################################
 
 "
-read options
+read -r options
 
 until [ $options = y ] || [ $options = n ];
     do echo "            That is not a valid answer.
             Your answer must be 'y' or 'n'
-            Please try again..." && read options
+            Please try again..." && read -r options
 done
 
 clear
@@ -149,7 +136,7 @@ if [ $options = y ];
     then youtube-dl -F $URL && echo "
             Which of the options above would you
             like to choose? (See number at start of
-            each line)." && read option && clear && youtube-dl -f $option $URL
+            each line)." && read -r option && clear && youtube-dl -f $option $URL
         else echo "
        #####################################################
        #                                                   #
@@ -158,7 +145,7 @@ if [ $options = y ];
        #####################################################" && youtube-dl $URL
 fi
 
-## End aquiring info' about the desired video to download...
+# End aquiring info' about the desired video to download...
 
 echo "
         ################################################
@@ -168,5 +155,5 @@ echo "
         #  Please press 'Enter' to close this window.  #
         #                                              #
         ################################################"
-read
+read -r
 
