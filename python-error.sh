@@ -15,4 +15,7 @@ if [ $pyerror = n ];
     else
 echo "Please try now, hopefully the issue will be fixed!
 Press 'Enter' to close this window"
-read
+fi
+echo "Link created!
+Press 'Enter' to close this window..."
+read -r
