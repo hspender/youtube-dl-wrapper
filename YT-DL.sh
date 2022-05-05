@@ -29,7 +29,7 @@ echo "
         #                                                           #
         #############################################################"
 
-#  Environmet check...
+#  Environment check...
 
 # Check for youtube-dl. If not found, prompt for install...
 echo "
@@ -38,7 +38,7 @@ if [ -f /usr/local/bin/youtube-dl ]
     then echo "            Youtube-dl found, nothing to install!"
         else echo " Youtube-dl not found and is needed.
 Would you like to install it? (y/n)" && read -r install
-until [ $install = y ] || [ $install = n ];
+until [ "$install" = y ] || [ "$install" = n ];
     do echo "  That is an invalid input, please use 'y' or 'n'." && read -r install
     done
 fi
@@ -83,14 +83,14 @@ echo "$ud_count" > ~/bin/YT-DL/db.txt
 
 # Start processing the update counter db...
 
-if [ $ud_count -gt $ud_frq ];
+if [ "$ud_count" -gt $ud_frq ];
     then echo "            We need to update!" && echo "            Checking for updates..." && youtube-dl -U && echo "0" > ~/bin/YT-DL/db.txt
         else echo "            No need to update yet..."
 fi
 
 # End processing the update counter db...
 
-# Start aquiring info' about the desired video to download...
+# Start acquiring info' about the desired video to download...
 
 # Ask the user what the URL of the video is...
 
@@ -124,7 +124,7 @@ echo "
 "
 read -r options
 
-until [ $options = y ] || [ $options = n ];
+until [ "$options" = y ] || [ "$options" = n ];
     do echo "            That is not a valid answer.
             Your answer must be 'y' or 'n'
             Please try again..." && read -r options
@@ -132,17 +132,17 @@ done
 
 clear
 
-if [ $options = y ];
-    then youtube-dl -F $URL && echo "
+if [ "$options" = y ];
+    then youtube-dl -F "$URL" && echo "
             Which of the options above would you
             like to choose? (See number at start of
-            each line)." && read -r option && clear && youtube-dl -f $option $URL
+            each line)." && read -r option && clear && youtube-dl -f "$option" "$URL"
         else echo "
        #####################################################
        #                                                   #
        #  Downloading full resolution video with audio...  #
        #                                                   #
-       #####################################################" && youtube-dl $URL
+       #####################################################" && youtube-dl "$URL"
 fi
 
 # End aquiring info' about the desired video to download...
