@@ -14,7 +14,7 @@ To run...
 I have chosen to download youtube-dl directly from their release page, in order to get  the latest version, but you can install it from your distro's repo' before installing this script if you'd rather have a version from your distro's repo'.<br />
 Note that my script does keep youtube-dl up to date by periodically checking the main repo for updates and applying them if needed.
 
-::NOTE:: You can have issues if youtube-dl can't find python in the place it thinks it should be and to resolve this, you need to create a symlink.<br />
+::NOTE:: You can have issues if youtube-dl can't find python, to fix this you can create a symlink.<br />
 
 If you get the error "/usr/bin/env: 'python': No such file or directory" then open a terminal and execute this code...<br />
 ```bash{16}
