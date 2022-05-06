@@ -11,7 +11,7 @@ To run...
 ```` bash 
 ~/bin/YT-DL/YT-DL.sh
 ````
-I have chosen to download youtube-dl directly from their release page, in order to get  the latest version, but you can install it from your distro's repo' before installing this script if you'd rather have a version from your distro's repo'.<br />
+I have chosen to download youtube-dl directly from their release page, in order to get  the latest version, but you can install it from your distro's repo' before installing this script if you'd rather.<br />
 Note that my script does keep youtube-dl up to date by periodically checking the main repo for updates and applying them if needed.
 
 ::NOTE:: You can have issues if youtube-dl can't find python, to fix this you can create a symlink.<br />
