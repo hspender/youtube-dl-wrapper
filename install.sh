@@ -12,7 +12,7 @@ if [ -d ~/bin/YT-DL ];
 fi
 
 # copy over the files...
-cp db.txt ~/bin/YT-DL/db.txt
+cp db.txt ~/bin/YT-DL
 cp YouTube-DL.svg ~/bin/YT-DL
 cp YT-DL.sh ~/bin/YT-DL
 cp LICENSE ~/bin/YT-DL
