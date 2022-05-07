@@ -22,7 +22,7 @@ Or create a link in your menu to this file for convenience.
 
 You can have issues if youtube-dl can't find python, to fix this you can create a symlink.<br />
 
-If you get the error "/usr/bin/env: 'python': No such file or directory" then open a terminal and execute this code...<br />
+If you get the error "/usr/bin/env: 'python': No such file or directory" then you can run the included script; 'python-error.sh' or open a terminal and execute this code...<br />
 ```bash{16}
 sudo ln -s /usr/bin/python3 /usr/bin/python
 ```
