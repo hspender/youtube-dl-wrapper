@@ -1,7 +1,7 @@
 <h3>About</h3>
 
-Youtube-dl-Wrapper is a Bash script for Linux that makes using youtube-dl a little easier, but is basically just an exercise in learning Git, GitKraken and Bash for me.<br />
-I hope to update and improve this code as well as maybe adding a Zenity front end over time.<br />
+Youtube-dl-Wrapper is a Bash script for Linux that makes using youtube-dl a little easier, but is basically just an exercise in learning [Git](https://git-scm.com/), [GitKraken](https://www.gitkraken.com/), [Intellij](https://www.jetbrains.com/idea/) and [Bash](https://www.gnu.org/software/bash/) for me.<br />
+I hope to update and improve this code as well as maybe adding a [Zenity](https://wiki.gnome.org/Projects/Zenity) front end over time.<br />
 
 <h3>Installation</h3>
 
