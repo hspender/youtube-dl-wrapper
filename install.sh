@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# Environment check. Checking for youtube-dl. If not found, prompt for install...
+echo "
+            Checking that youtube-dl is installed..."
+if [ -f /usr/local/bin/youtube-dl ]
+    then echo >/dev/null
+        else sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && sudo chmod a+rx /usr/local/bin/youtube-dl
+fi
+
+#  End environment check.
+
 # Check for needed directories...
 if [ -d ~/bin ];
   then echo >/dev/null

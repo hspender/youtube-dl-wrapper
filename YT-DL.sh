@@ -31,35 +31,6 @@ echo "
 
 #  Environment check...
 
-# Check for youtube-dl. If not found, prompt for install...
-echo "
-            Checking that youtube-dl is installed..."
-if [ -f /usr/local/bin/youtube-dl ]
-    then echo "            Youtube-dl found, nothing to install!"
-        else echo " Youtube-dl not found and is needed.
-Would you like to install it? (y/n)" && read -r install
-until [ "$install" = y ] || [ "$install" = n ];
-    do echo "  That is an invalid input, please use 'y' or 'n'." && read -r install
-    done
-fi
-
-if [ "$install" = y ];
-    then sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && sudo chmod a+rx /usr/local/bin/youtube-dl
-elif [ "$install" = n ];
-    then echo "
-        ####################################################'
-        #                                                  #
-        #  You cannot use this script without youtube-dl.  #
-        #  Aborting!                                       #
-        #                                                  #
-        #  Press 'Enter' to close this window...           #
-        #                                                  #
-        ####################################################" && read -r && exit 1
-
-fi
-
-#  End environment check.
-
 # Move to working dir...
 cd ~/Desktop || exit
 
