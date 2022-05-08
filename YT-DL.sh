@@ -6,9 +6,9 @@
 #  It also checks that ytdl is installed  # 
 #  and up to date!                        #
 #  By Harry Spender                       #
-#  Version 0.8.1                          #
+#  Version 0.9.1                          #
 #  Date of first version; 2022-04-04      #
-#  Date of last update; 2022-04-20        #
+#  Date of last update; 2022-05-08        #
 #                                         #
 ###########################################
 
@@ -25,11 +25,9 @@ echo "
         #############################################################
         #                                                           #
         #      Welcome to the Harry's YouTube video downloader!     #
-        #                     Version 0.8.1                         #
+        #                     Version 0.9.1                         #
         #                                                           #
         #############################################################"
-
-#  Environment check...
 
 # Move to working dir...
 cd ~/Desktop || exit

@@ -4,8 +4,8 @@
 echo "
             Checking that youtube-dl is installed..."
 if [ -f /usr/local/bin/youtube-dl ]
-    then echo >/dev/null
-        else sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && sudo chmod a+rx /usr/local/bin/youtube-dl
+    then echo "0" > ./dbytdl.txt
+        else echo "youtube-dl is not present - installing..." && sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && sudo chmod a+rx /usr/local/bin/youtube-dl && echo "1" > ./dbytdl.txt
 fi
 
 #  End environment check.

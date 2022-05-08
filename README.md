@@ -5,6 +5,8 @@ I hope to update and improve this code as well as maybe adding a [Zenity](https:
 
 <h3>Installation</h3>
 
+You don't need to install youtube-dl-wrapper, but as part of ensuring and enabling it works as expected, installing helps.<br />
+
 To install, run the installation script in the main directory - ~/YT-DL/Yt-DL.sh. This will check to see if you have youtube-dl installed and if you don't, it will install it.<br />
 It installs to /home/{user}/bin/YT-DL and does not as yet create a menu entry, so you need to do that manually for the time being.<br />
 I have chosen to download youtube-dl directly from their release page (https://github.com/ytdl-org/youtube-dl), in order to get  the latest version, but you can install it from your distro's repo' before installing this script if you'd rather.<br />
@@ -17,6 +19,13 @@ Execute the following command in the terminal...
 ~/bin/YT-DL/YT-DL.sh
 ````
 Or create a link in your menu to this file for convenience.
+
+Your video will be downloaded to your Desktop.
+
+<h3>Uninstall</h3>
+
+If you wish to uninstall this app, then you can do so by running the 'uninstall.sh' script.<br />
+This should only uninstall components that were installed when you installed youtube-dl-wrapper, so if you had previsouly installed youtube-dl yourself, or manually added the 'usr/bin/python' link, you will need to uninstall them yourself manually.
 
 <h3>::NOTE::</h3>
 
