@@ -64,12 +64,11 @@ fi
 # Ask the user what the URL of the video is...
 
 echo " 
-      
-        ###############################################################
-        #                                                             #
-        #  Please enter the URL of the video you want to download...  #
-        #                                                             #
-        ###############################################################"
+        #############################################################
+        #                                                           #
+        #  Please enter the URL of the video you want to download - #
+        #                                                           #
+        #############################################################"
 
 read -r URL #Example - https://youtu.be/S8UNBfatLTo
 
