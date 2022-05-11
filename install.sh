@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Environment check. Checking for youtube-dl. If not found, prompt for install...
+# Environment check. Checking for youtube-dl. If not found, install.
 echo "
             Checking that youtube-dl is installed..."
 if [ -f /usr/local/bin/youtube-dl ]
@@ -29,12 +29,11 @@ cp LICENSE ~/bin/YT-DL
 cp README.md ~/bin/YT-DL
 
 # Check for the python symlink...
-
 if [ -f /usr/bin/python ];
     then echo >/dev/null
         else echo "There may be problems running youtube-dl itself.
-If you get the error message '/usr/bin/env: 'python': No such file or directory'
-the you should run the included python-error.sh script to fix it."
+If you get the error message '/usr/bin/env: 'python': No such file or directory',
+then you should run the included python-error.sh script to fix it."
 fi
 
 # Tell the user we're finished installing...

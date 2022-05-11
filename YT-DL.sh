@@ -73,7 +73,7 @@ echo "
 read -r URL #Example - https://youtu.be/S8UNBfatLTo
 
 # Validate user input of the URL variable...
-until [[ $URL = *youtu* ]];
+until [[ $URL = https://* ]];
     do echo "            That is not a recognised URL.
             Please try again..." && read -r URL
 done
