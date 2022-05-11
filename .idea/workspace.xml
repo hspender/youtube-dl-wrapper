@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a3fbeb1-6931-4abf-be7c-340aeb2fd4f7" name="Changes" comment="Another readme file updates!" />
+    <list default="true" id="1a3fbeb1-6931-4abf-be7c-340aeb2fd4f7" name="Changes" comment="Another readme file update!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +12,11 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GithubPullRequestsUISettings">
+    <option name="recentSearchFilters">
+      <list>
+        <option value="youtube-dl-wrapper" />
+      </list>
+    </option>
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="75d23e9e-7bb5-4df0-9a6a-812d023a9a11" />
@@ -34,9 +39,9 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager" selected="Shell Script.YT-DL.sh">
-    <configuration default="true" type="Application" factoryName="Application">
+    <configuration default="true" type="NimRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="Make" enabled="true" />
+        <option name="nim.task.build.to.cache" enabled="true" />
       </method>
     </configuration>
     <configuration name="YT-DL.sh" type="ShConfigurationType" temporary="true">
@@ -143,7 +148,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651855047133</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Another readme file updates!">
+      <created>1652012405012</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652012405012</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Another readme file update!">
+      <created>1652128381952</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1652128381952</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +182,7 @@
     <MESSAGE value="Fixed issues in the python error script." />
     <MESSAGE value="All sorts of stuff!" />
     <MESSAGE value="Another readme file updates!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Another readme file updates!" />
+    <MESSAGE value="Another readme file update!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Another readme file update!" />
   </component>
 </project>
